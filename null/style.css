@@ -124,6 +124,22 @@ header .head h4 a {
   height: 25px;
 }
 
+article {
+  margin: 40px 130px;
+  background-color: rgb(216, 212, 212);
+}
+article .detail {
+  padding: 10px 70px;
+  display: flex;
+}
+article .detail .text {
+  padding: 40px;
+  width: 750px;
+}
+article .detail .image img {
+  width: 550px;
+}
+
 @media screen and (max-width: 768px) {
   header .head h4 {
     padding: 0 20px;

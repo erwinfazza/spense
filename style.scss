@@ -131,6 +131,26 @@ header {
     }
   }
 }
+
+// article
+article {
+  margin: 40px 130px;
+  background-color: rgb(216, 212, 212);
+  .detail {
+    padding: 10px 70px;
+    display: flex;
+    .text {
+      padding: 40px;
+      width: 750px;
+    }
+    .image {
+      img {
+        width: 550px;
+      }
+    }
+  }
+}
+
 // tablet
 @media screen and (max-width: 768px) {
   header {
