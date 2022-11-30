@@ -115,7 +115,22 @@ header {
 }
 
 //brands
-
+.brands {
+  .container {
+    ul {
+      overflow: scroll;
+      display: flex;
+      li {
+        list-style: none;
+        margin-right: 20px;
+        img {
+          width: 120px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}
 // tablet
 @media screen and (max-width: 768px) {
   header {
@@ -132,6 +147,19 @@ header {
   .main {
     margin: 40px 20px;
     flex-direction: column;
+    .text {
+      order: 2;
+      width: 620px;
+    }
+    .images {
+      .desktop {
+        display: none;
+      }
+      .tablet {
+        display: block;
+        width: 625px;
+      }
+    }
   }
 }
 // mobile
@@ -183,6 +211,20 @@ header {
       }
       .toggle-button {
         display: block;
+      }
+    }
+  }
+  .main {
+    .text {
+      width: 450px;
+    }
+    .images {
+      .tablet {
+        display: none;
+      }
+      .mobile {
+        display: block;
+        width: 450px;
       }
     }
   }

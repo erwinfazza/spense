@@ -111,6 +111,19 @@ header .head h4 a {
   display: none;
 }
 
+.brands .container ul {
+  overflow: scroll;
+  display: flex;
+}
+.brands .container ul li {
+  list-style: none;
+  margin-right: 20px;
+}
+.brands .container ul li img {
+  width: 120px;
+  height: 25px;
+}
+
 @media screen and (max-width: 768px) {
   header .head h4 {
     padding: 0 20px;
@@ -122,6 +135,17 @@ header .head h4 a {
   .main {
     margin: 40px 20px;
     flex-direction: column;
+  }
+  .main .text {
+    order: 2;
+    width: 620px;
+  }
+  .main .images .desktop {
+    display: none;
+  }
+  .main .images .tablet {
+    display: block;
+    width: 625px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -167,5 +191,15 @@ header .head h4 a {
   }
   .container .navbar .toggle-button {
     display: block;
+  }
+  .main .text {
+    width: 450px;
+  }
+  .main .images .tablet {
+    display: none;
+  }
+  .main .images .mobile {
+    display: block;
+    width: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
