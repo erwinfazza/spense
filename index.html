@@ -10,28 +10,104 @@
   </head>
   <body>
     <header>
-      <h4>
-        To celebrate Spense's lounch, we will be waiving all fees for the entire
-        month of April.
-        <a href="#">You will be receiving 100% of the earning.</a>
-      </h4>
-    </header>
-    <div class="container">
-      <nav class="navbar">
-        <div class="brand">spense</div>
-        <div class="navlink">
+      <div class="head">
+        <h4>
+          To celebrate Spense's lounch, we will be waiving all fees for the
+          entire month of April.
+          <a href="#">You will be receiving 100% of the earning.</a>
+        </h4>
+      </div>
+
+      <div class="container">
+        <nav class="navbar">
+          <div class="brand">spense</div>
+          <div class="navlink">
+            <ul>
+              <li><a href="#">Business</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Features</a></li>
+            </ul>
+          </div>
+          <div class="btn">
+            <button class="light">login</button>
+            <button class="black">Get Started</button>
+          </div>
+          <div class="toggle-button">
+            <img src="Assets/Hamburger Menu.svg" alt="menu" />
+          </div>
+        </nav>
+      </div>
+
+      <!-- head text -->
+      <div class="main">
+        <div class="text">
+          <h1>Share your unfiltered throughts. Get paid.</h1>
+          <p class="text-main">
+            Spense is an open platform for individuals to share their unfiltered
+            thoughts. Discuss the topic you love, end get paid for doing
+            <i>just</i> that.
+          </p>
           <ul>
-            <li><a href="#">Business</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Features</a></li>
+            <li>
+              <img src="Assets/Checkmark.svg" alt="" />
+              <p>Receive 99% off the earnings.</p>
+            </li>
+            <li>
+              <img src="Assets/Checkmark.svg" alt="" />
+              <p>Get paid via Debit Card, ACH, or PayPal.</p>
+            </li>
+            <li>
+              <img src="Assets/Checkmark.svg" alt="" />
+              <p>Withdraw youe earnings anytime.</p>
+            </li>
           </ul>
+          <div class="mid-btn">
+            <input
+              class="email"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="john@example.com"
+            />
+            <input type="button" value="Get Started" class="get" />
+          </div>
         </div>
-        <div class="btn">
-          <button class="light">login</button>
-          <button class="black">Get Started</button>
+        <div class="images">
+          <img src="Assets/Hero Image (Desktop).png" alt="" class="desktop" />
+          <img src="Assets/Hero Image (Tablet).png" alt="Hero" class="tablet" />
+          <img src="Assets//Hero Image (Mobile).png" alt="" class="mobile" />
         </div>
-      </nav>
+      </div>
+    </header>
+
+    <!-- head text -->
+
+    <!-- brands -->
+    <div class="brands">
+      <div class="container">
+        <ul>
+          <li><img src="Assets/Facebook Logo.png" alt="facebook" /></li>
+          <li><img src="Assets/Dribbble Logo.png" alt="dribble" /></li>
+          <li><img src="Assets/Youtube Logo.png" alt="youtube" /></li>
+          <li><img src="Assets/Pinterest Logo.png" alt="pinterest" /></li>
+          <li><img src="Assets/Twitter Logo.png" alt="twitter" /></li>
+          <li><img src="Assets/Reddit Logo.png" alt="redit" /></li>
+          <li><img src="Assets/Google Logo.png" alt="google" /></li>
+          <li><img src="Assets/Slack Logo.png" alt="slak" /></li>
+        </ul>
+      </div>
     </div>
+
+    <script>
+      const toggleButton = document.getElementsByClassName("toggle-button")[0];
+      const navLink = document.getElementsByClassName("navlink")[0];
+      const btn = document.getElementsByClassName("btn")[0];
+
+      toggleButton.addEventListener("click", () => {
+        navLink.classList.toggle("active");
+        btn.classList.toggle("active");
+      });
+    </script>
     <script src="js/brands.js"></script>
   </body>
 </html>

@@ -5,16 +5,19 @@
 }
 
 header {
+  background-color: rgb(216, 212, 212);
+  padding-bottom: 40px;
+}
+header .head {
   background-color: black;
 }
-header h4 {
-  display: flex;
-  justify-content: center;
+header .head h4 {
+  padding: 10px 220px;
   align-items: center;
   height: 2.5rem;
   color: white;
 }
-header h4 a {
+header .head h4 a {
   color: white;
 }
 
@@ -36,6 +39,9 @@ header h4 a {
   text-decoration: none;
   color: black;
 }
+.container .navbar .btn {
+  margin-top: -8px;
+}
 .container .navbar .btn .light {
   background: none;
   border: none;
@@ -47,4 +53,119 @@ header h4 a {
   padding: 10px;
   border: none;
   border-radius: 5px;
+}
+.container .navbar .toggle-button {
+  display: none;
+}
+
+.main {
+  margin: 40px 130px;
+  display: flex;
+}
+.main .text {
+  width: 650px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.main .text h1 {
+  font-size: 60px;
+}
+.main .text .text-main {
+  margin: 20px 0;
+  line-height: 30px;
+}
+.main .text ul {
+  margin: 30px 0;
+}
+.main .text ul li {
+  list-style: none;
+  display: flex;
+  margin: 10px 0;
+}
+.main .text ul li img {
+  margin: -3px 10px 0 0;
+}
+.main .text .mid-btn .email {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+.main .text .mid-btn .get {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+.main .images {
+  width: 450px;
+}
+.main .images .desktop {
+  width: 450px;
+}
+.main .images .tablet {
+  display: none;
+}
+.main .images .mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header .head h4 {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .container {
+    margin: 40px 20px;
+  }
+  .main {
+    margin: 40px 20px;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .head {
+    display: flex;
+    padding: 10px 30px;
+    height: 70px;
+  }
+  header .head h2 {
+    display: flex;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+  .container {
+    margin: 40px 30px;
+  }
+  .container .navbar .navlink {
+    background-color: rgb(192, 190, 188);
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    display: none;
+    padding: 10px 110px;
+  }
+  .container .navbar .navlink ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .navbar .navlink ul li {
+    margin: 10px;
+  }
+  .container .navbar .navlink.active {
+    display: flex;
+  }
+  .container .navbar .btn {
+    position: absolute;
+    top: 275px;
+    left: 200px;
+    display: none;
+  }
+  .container .navbar .btn.active {
+    display: block;
+  }
+  .container .navbar .toggle-button {
+    display: block;
+  }
 }/*# sourceMappingURL=style.css.map */

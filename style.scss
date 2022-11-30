@@ -5,15 +5,18 @@
 }
 // header black
 header {
-  background-color: black;
-  h4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2.5rem;
-    color: white;
-    a {
+  background-color: rgb(216, 212, 212);
+  padding-bottom: 40px;
+  .head {
+    background-color: black;
+    h4 {
+      padding: 10px 220px;
+      align-items: center;
+      height: 2.5rem;
       color: white;
+      a {
+        color: white;
+      }
     }
   }
 }
@@ -35,6 +38,7 @@ header {
       }
     }
     .btn {
+      margin-top: -8px;
       .light {
         background: none;
         border: none;
@@ -46,6 +50,139 @@ header {
         padding: 10px;
         border: none;
         border-radius: 5px;
+      }
+    }
+    .toggle-button {
+      display: none;
+    }
+  }
+}
+
+// head text
+.main {
+  margin: 40px 130px;
+  display: flex;
+  .text {
+    h1 {
+      font-size: 60px;
+    }
+    .text-main {
+      margin: 20px 0;
+      line-height: 30px;
+    }
+    width: 650px;
+    margin-right: 50px;
+    margin-top: 50px;
+    ul {
+      margin: 30px 0;
+      li {
+        list-style: none;
+        display: flex;
+        margin: 10px 0;
+        img {
+          margin: -3px 10px 0 0;
+        }
+      }
+    }
+    .mid-btn {
+      .email {
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid grey;
+      }
+      .get {
+        padding: 10px;
+        margin-left: 10px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        border: none;
+      }
+    }
+  }
+  .images {
+    width: 450px;
+    .desktop {
+      width: 450px;
+    }
+    .tablet {
+      display: none;
+    }
+    .mobile {
+      display: none;
+    }
+  }
+}
+
+//brands
+
+// tablet
+@media screen and (max-width: 768px) {
+  header {
+    .head {
+      h4 {
+        padding: 0 20px;
+        text-align: center;
+      }
+    }
+  }
+  .container {
+    margin: 40px 20px;
+  }
+  .main {
+    margin: 40px 20px;
+    flex-direction: column;
+  }
+}
+// mobile
+
+@media screen and (max-width: 576px) {
+  header {
+    .head {
+      display: flex;
+      padding: 10px 30px;
+      height: 70px;
+      h2 {
+        display: flex;
+        letter-spacing: 2px;
+        text-align: center;
+      }
+    }
+  }
+  .container {
+    margin: 40px 30px;
+    .navbar {
+      .navlink {
+        background-color: rgb(192, 190, 188);
+        margin-top: 30px;
+        width: 300px;
+        height: 200px;
+        display: none;
+        padding: 10px 110px;
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            margin: 10px;
+          }
+        }
+      }
+      .navlink.active {
+        display: flex;
+      }
+
+      .btn {
+        position: absolute;
+        top: 275px;
+        left: 200px;
+        display: none;
+      }
+      .btn.active {
+        display: block;
+      }
+      .toggle-button {
+        display: block;
       }
     }
   }
