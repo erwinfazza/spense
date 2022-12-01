@@ -127,6 +127,7 @@ header .head h4 a {
 article {
   margin: 40px 130px;
   background-color: rgb(216, 212, 212);
+  height: 310px;
 }
 article .detail {
   padding: 10px 70px;
@@ -134,10 +135,27 @@ article .detail {
 }
 article .detail .text {
   padding: 40px;
-  width: 750px;
+  width: 785px;
+  letter-spacing: 1px;
+}
+article .detail .text h2 {
+  font-size: 40px;
+  width: 400px;
+}
+article .detail .text p {
+  padding: 20px 0;
+}
+article .detail .text a {
+  color: black;
+}
+article .detail .image {
+  width: 650px;
 }
 article .detail .image img {
-  width: 550px;
+  width: 650px;
+  height: 300px;
+  position: absolute;
+  right: 150px;
 }
 
 @media screen and (max-width: 768px) {
@@ -162,6 +180,13 @@ article .detail .image img {
   .main .images .tablet {
     display: block;
     width: 625px;
+  }
+  article {
+    margin: 20px;
+    height: 560px;
+  }
+  article .image {
+    margin-top: 250px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -217,5 +242,20 @@ article .detail .image img {
   .main .images .mobile {
     display: block;
     width: 450px;
+  }
+  article {
+    height: 590px;
+  }
+  article .detail {
+    width: 300px;
+    margin: 0 -70px;
+  }
+  article .detail .text {
+    padding: 50px;
+    width: 450px;
+  }
+  article .detail .image {
+    margin: 280px;
+    margin-left: 100px;
   }
 }/*# sourceMappingURL=style.css.map */
