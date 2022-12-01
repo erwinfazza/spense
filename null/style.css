@@ -158,6 +158,29 @@ article .detail .image img {
   right: 150px;
 }
 
+section {
+  margin: 40px 30px;
+}
+section .content {
+  display: flex;
+}
+section .content .frame {
+  width: 900px;
+}
+section .content .frame .pic {
+  width: 890px;
+}
+section .content .describe {
+  width: 300px;
+  margin: 150px 0;
+}
+section .content .describe p {
+  padding: 20px 0;
+}
+section .content .describe a {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   header .head h4 {
     padding: 0 20px;
@@ -187,6 +210,22 @@ article .detail .image img {
   }
   article .image {
     margin-top: 250px;
+  }
+  section {
+    margin: 20px;
+  }
+  section .content {
+    flex-direction: column;
+  }
+  section .content .frame {
+    order: 2;
+    width: 600px;
+  }
+  section .content .frame .pic {
+    width: 600px;
+  }
+  section .content .describe {
+    width: 600px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -257,5 +296,19 @@ article .detail .image img {
   article .detail .image {
     margin: 280px;
     margin-left: 100px;
+  }
+  section {
+    margin: -100px 30px;
+  }
+  section .content {
+    flex-direction: column;
+  }
+  section .content .frame {
+    margin: -100px 0;
+    order: 2;
+    width: 450px;
+  }
+  section .content .frame .pic {
+    width: 450px;
   }
 }/*# sourceMappingURL=style.css.map */
