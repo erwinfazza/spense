@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
 }
 
 header {
@@ -186,7 +191,7 @@ footer {
   color: white;
 }
 footer .end {
-  margin: 40px 130px;
+  margin: 40px 130px 0;
   padding: 40px 0;
   display: flex;
 }
@@ -196,6 +201,7 @@ footer .end .brand {
 }
 footer .end .brand p {
   padding: 10px 0;
+  color: rgb(165, 161, 154);
 }
 footer .end .left {
   display: flex;
