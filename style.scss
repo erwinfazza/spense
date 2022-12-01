@@ -191,6 +191,44 @@ section {
   }
 }
 
+//footer
+footer {
+  background-color: black;
+  color: white;
+  .end {
+    margin: 40px 130px;
+    padding: 40px 0;
+    display: flex;
+    .brand {
+      width: 350px;
+      margin-right: 150px;
+      p {
+        padding: 10px 0;
+      }
+    }
+    .left {
+      display: flex;
+    }
+    .right {
+      display: flex;
+    }
+
+    .nav {
+      ul {
+        padding-right: 100px;
+        li {
+          margin-top: 10px;
+          list-style: none;
+          a {
+            color: rgb(156, 153, 153);
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
 // tablet
 @media screen and (max-width: 768px) {
   header {
@@ -243,6 +281,17 @@ section {
       }
       .describe {
         width: 600px;
+      }
+    }
+  }
+  //footer
+  footer {
+    height: 400px;
+    .end {
+      margin: 40px 20px;
+      .right {
+        position: absolute;
+        margin-top: 200px;
       }
     }
   }
@@ -345,6 +394,32 @@ section {
           width: 450px;
         }
       }
+      .describe {
+        width: 380px;
+      }
+    }
+  }
+  // footer
+  footer {
+    .end {
+      flex-direction: column;
+      .brand {
+        width: 400px;
+        margin-right: 50px;
+      }
+      margin: 200px 20px;
+    }
+    .left {
+      order: 2;
+    }
+    .nav {
+      margin-right: 80px;
+    }
+    .nav1,
+    .nav2,
+    .nav3,
+    .nav4 {
+      margin-top: 40px;
     }
   }
 }

@@ -181,6 +181,40 @@ section .content .describe a {
   color: black;
 }
 
+footer {
+  background-color: black;
+  color: white;
+}
+footer .end {
+  margin: 40px 130px;
+  padding: 40px 0;
+  display: flex;
+}
+footer .end .brand {
+  width: 350px;
+  margin-right: 150px;
+}
+footer .end .brand p {
+  padding: 10px 0;
+}
+footer .end .left {
+  display: flex;
+}
+footer .end .right {
+  display: flex;
+}
+footer .end .nav ul {
+  padding-right: 100px;
+}
+footer .end .nav ul li {
+  margin-top: 10px;
+  list-style: none;
+}
+footer .end .nav ul li a {
+  color: rgb(156, 153, 153);
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   header .head h4 {
     padding: 0 20px;
@@ -226,6 +260,16 @@ section .content .describe a {
   }
   section .content .describe {
     width: 600px;
+  }
+  footer {
+    height: 400px;
+  }
+  footer .end {
+    margin: 40px 20px;
+  }
+  footer .end .right {
+    position: absolute;
+    margin-top: 200px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -310,5 +354,28 @@ section .content .describe a {
   }
   section .content .frame .pic {
     width: 450px;
+  }
+  section .content .describe {
+    width: 380px;
+  }
+  footer .end {
+    flex-direction: column;
+    margin: 200px 20px;
+  }
+  footer .end .brand {
+    width: 400px;
+    margin-right: 50px;
+  }
+  footer .left {
+    order: 2;
+  }
+  footer .nav {
+    margin-right: 80px;
+  }
+  footer .nav1,
+footer .nav2,
+footer .nav3,
+footer .nav4 {
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */
